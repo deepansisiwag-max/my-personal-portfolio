@@ -1,0 +1,209 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    font-size: 26px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* All Sections */
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.8;
+}
+
+/* Home Section */
+#home {
+    background-color: #dbeafe;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #172554;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #dbeafe;
+    color: #172554;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.project {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f6f9;
+}
+
+#contact h2 {
+    font-size: 28px;
+    color: #333366;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #555;
+}
+
+#contact a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #333;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Skill Hover Effect */
+.skill:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Project Hover Effect */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* Smooth Hover Transitions */
+.btn,
+.skill,
+.project {
+    transition: all 0.3s ease;
+}
